@@ -30,7 +30,7 @@ Figura 6<br />
 - Aqui está um exemplo de _StringConnection_: 
 ```“Data Source=DESKTOP-SGIU0K8;Initial Catalog=PessoasDatabase;Integrated Security=True”```<br />
 
-Observação: o Valor da propriedade Data Soucer pode ser obtido em sua máquina abrindo o Microsoft SQL Server Management Studio 18, como na Figura 7.<br />
+- Observação: o Valor da propriedade Data Soucer pode ser obtido em sua máquina abrindo o Microsoft SQL Server Management Studio 18, como na Figura 7.<br />
 Figura 7<br />
 ![07](https://user-images.githubusercontent.com/72811894/96017557-84854180-0e20-11eb-8474-158e84a19901.png)<br />
 
@@ -46,7 +46,7 @@ Figura 7<br />
 -	Deletar uma chave caso precise.<br />
 ``` dotnet user-secrets remove "App:ConnectionString"```<br />
 ## 3.	Configuração do Banco de dados
-Agora vamos para parte de configuração do banco de dados, para isso acesse o menu superior do Visual Studio em Exibir > SQL Serve Object Explore (Clique nessa opção). Irá aparece uma janela igual a essa da Figura 8, acesse o seu banco de dados SQL serve em Database, clique com o botão direito do mouse, e clique na opção _Add new Database_, Escreva um nome para o banco de dados e depois atualize seu arquivo _appsettings.json_  na _StringConnection_ no campo _Catalog_ com o nome que você escolheu para o banco de dados.<br />
+- Agora vamos para parte de configuração do banco de dados, para isso acesse o menu superior do Visual Studio em Exibir > SQL Serve Object Explore (Clique nessa opção). Irá aparece uma janela igual a essa da Figura 8, acesse o seu banco de dados SQL serve em Database, clique com o botão direito do mouse, e clique na opção _Add new Database_, Escreva um nome para o banco de dados e depois atualize seu arquivo _appsettings.json_  na _StringConnection_ no campo _Catalog_ com o nome que você escolheu para o banco de dados.<br />
 Figura 8<br />
 ![08](https://user-images.githubusercontent.com/72811894/96017546-818a5100-0e20-11eb-875e-de47b9c13013.png)<br />
 
@@ -56,7 +56,7 @@ Figura 8<br />
 - A Figura 9 mostra como é a mensagem exibida logo pós a migração ser bem sucedida.<br />
 Figura 9<br />
 ![09](https://user-images.githubusercontent.com/72811894/96017547-82bb7e00-0e20-11eb-84b2-e7bc9bfe0e8e.png)<br />
-Obs.: Esse último nome fica ao seu critério normalmente uso migracao + nome da tabela ou recursos que adicionando ao projeto.
+- Obs.: Esse último nome fica ao seu critério normalmente uso migracao + nome da tabela ou recursos que adicionando ao projeto.
 
 - Feito isso é só mudar de depuração de IISExpress para o com nome do seu projeto como mostrado na Figura 10 e clicar no   para executar.<br />
 Figura 10<br />
