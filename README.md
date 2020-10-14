@@ -32,7 +32,7 @@ Figura 6<br />
 
 Observação: o Valor da propriedade Data Soucer pode ser obtido em sua máquina abrindo o Microsoft SQL Server Management Studio 18, como na Figura 7.<br />
 Figura 7<br />
--![07](https://user-images.githubusercontent.com/72811894/96017557-84854180-0e20-11eb-8474-158e84a19901.png)<br />
+![07](https://user-images.githubusercontent.com/72811894/96017557-84854180-0e20-11eb-8474-158e84a19901.png)<br />
 
 ## 2.	Configuração do ambiente de desenvolvimento
 
