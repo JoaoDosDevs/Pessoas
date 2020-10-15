@@ -32,12 +32,6 @@ namespace Pessoas
         public void ConfigureServices(IServiceCollection services)
         {
 
-            /*services.AddDbContext<ApplicationDbContext>(options =>
-              options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            string conexaoBD = "AI1sFiayytywNPZu3oAyxKlDoSHOf5IjSuplKImu0DiS8UE7vl8t3AMtW6lrIT627n2yCn1uh7okj6EuUQCSYc+2EhzbevqFwyew1ezwnUzwlPobPlQB4K/GFeeM9wsNF6mNtwZT/hAd4DA3g20ezOSW0WffY9EelNymUvs0m/G/ShbOSa5/1fuGU2fy2MxTsFJVrpRfvJROrpH+TJkybmu350xNp29FdAKB/9ozHRM=";
-            var builder = new SqlConnectionStringBuilder(SecurityController.Decrypt(conexaoBD, _env));
-            */
-
             if(_env == "Development") {
                 var builder = new System.Data.SqlClient.SqlConnectionStringBuilder(Configuration["App:ConnectionString"]);
 
@@ -47,7 +41,7 @@ namespace Pessoas
             else if(_env == "Production")
             {
                 services.AddDbContext<ApplicationDbContext>(options =>
-                      options.UseSqlServer(Environment.GetEnvironmentVariable("ConnectionStringPessoas", EnvironmentVariableTarget.Machine)));
+                      options.UseSqlServer(Environment.GetEnvironmentVariable("ConnectionStringPessoas", EnvironmentVariableTarget.User)));
             }
 
 
